@@ -2129,11 +2129,18 @@ a {
     .container{
         grid-template-columns: repeat(1,1fr);
     }
-    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6, .h-1, .h-2, .h-3, .h-4, .h-5{
         grid-column:span 1;
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
 
 
 @keyframes move-down{
