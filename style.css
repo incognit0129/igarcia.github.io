@@ -2130,7 +2130,7 @@ a {
         grid-template-columns: repeat(1,1fr);
     }
     .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
-        grid-column:span 3;
+        grid-column:span 1;
     }
 
 }
