@@ -514,7 +514,7 @@ a {
 
 .w3-sidebar {
     height: 100%;
-    width: 100px;
+    width: 200px;
     background-color: #fff;
     position: fixed !important;
     z-index: 1;
@@ -1995,6 +1995,8 @@ a {
 
 
 .container{
+    width: 25%;
+    height: 25%;
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows:100px 300px;
@@ -2012,8 +2014,8 @@ a {
 }
 
 .gallery-item .image{
-    width:50%;
-    height:50%;
+    width:100%;
+    height:100%;
     overflow:hidden;
 }
 
@@ -2135,12 +2137,12 @@ a {
 
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-    }
-  }
+@media only screen and (max-width: 640px)
+{.container {
+   width: 25% !important;
+   clear: none !important;
+}
+}
 
 
 @keyframes move-down{
